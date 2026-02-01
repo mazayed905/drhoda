@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#4B2E83" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <title>د. هدى حسنى أحمد الشايب | الموقع الشخصي</title>
+  <meta name="description" content="السيرة الذاتية الأكاديمية للدكتورة هدى حسنى أحمد الشايب — أستاذ مساعد، كلية علوم الرياضة والنشاط البدني، جامعة الملك سعود." />
+
+  <style>
+    :root{
+      --max: 1180px;
+      --radius: 18px;
+      --shadow: 0 16px 55px rgba(2, 6, 23, .10);
+      --shadow2: 0 10px 30px rgba(2, 6, 23, .10);
+      --ring: 0 0 0 4px rgba(255,183,3,.22), 0 0 28px rgba(255,183,3,.30);
+      --glow: 0 0 0 1px rgba(255,183,3,.40), 0 10px 45px rgba(255,183,3,.25);
+      --font: "Cairo","Tajawal","Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+
+      --bg: #f6f7fb;
+      --bg2:#eef1f8;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --border:#e6e8f2;
+
+      --brand:#4B2E83;
+      --brand2:#9D4EDD;
+      --accent:#FFB703;
+      --accent2:#219EBC;
+    }
+
+    [data-theme="dark"]{
+      --bg:#0a0f1e;
+      --bg2:#0f1731;
+      --card: rgba(255,255,255,.06);
+      --text:#e8eefc;
+      --muted:#b9c5e6;
+      --border: rgba(255,255,255,.12);
+      --shadow: 0 18px 70px rgba(0,0,0,.45);
+      --shadow2: 0 12px 35px rgba(0,0,0,.40);
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--font);
+      color: var(--text);
+      background:
+        radial-gradient(1200px 900px at 15% 5%, rgba(157,78,221,.18), transparent 60%),
+        radial-gradient(1100px 700px at 85% 10%, rgba(33,158,188,.18), transparent 55%),
+        radial-gradient(1200px 900px at 50% 95%, rgba(255,183,3,.12), transparent 60%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+      overflow-x:hidden;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:22px 16px 60px; }
+
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(14px);
+      background: color-mix(in srgb, var(--bg), transparent 18%);
+      border-bottom:1px solid var(--border);
+    }
+    .topbarIn{
+      max-width:var(--max); margin:0 auto; padding:10px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      min-width: 220px;
+    }
+    .mark{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 10px 25px rgba(75,46,131,.25);
+      display:grid; place-items:center;
+      color:#fff; font-weight:800;
+    }
+    .brand .t{ display:flex; flex-direction:column; line-height:1.2; }
+    .brand .t b{ font-size:14px; letter-spacing:.2px; }
+    .brand .t span{ font-size:12px; color:var(--muted); }
+
+    .nav{
+      display:flex; align-items:center; gap:8px;
+      overflow:auto; -webkit-overflow-scrolling:touch;
+      padding:6px 0;
+      scrollbar-width: none;
+      flex:1;
+    }
+    .nav::-webkit-scrollbar{ display:none; }
+    .nav a{
+      white-space:nowrap;
+      padding:9px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: color-mix(in srgb, var(--card), transparent 10%);
+      box-shadow: 0 6px 18px rgba(2,6,23,.05);
+      font-size:13px;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+      outline:none;
+    }
+    .nav a:hover,
+    .nav a:focus-visible{
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent), var(--border) 55%);
+      box-shadow: var(--glow);
+      background: color-mix(in srgb, var(--accent), var(--card) 88%);
+    }
+
+    .actions{ display:flex; align-items:center; gap:8px; }
+    .btn{
+      border:1px solid var(--border);
+      background: color-mix(in srgb, var(--card), transparent 8%);
+      color:var(--text);
+      border-radius:12px;
+      padding:9px 12px;
+      display:inline-flex; align-items:center; gap:8px;
+      cursor:pointer;
+      box-shadow: 0 8px 22px rgba(2,6,23,.06);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      user-select:none;
+      font-size:13px;
+      outline:none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:hover, .btn:focus-visible{
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent2), var(--border) 55%);
+      box-shadow: 0 18px 45px rgba(33,158,188,.22);
+    }
+    .btn .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px rgba(255,183,3,.18);
+    }
+
+    .hero{
+      margin-top:16px;
+      border:1px solid var(--border);
+      background: color-mix(in srgb, var(--card), transparent 5%);
+      box-shadow: var(--shadow);
+      border-radius: calc(var(--radius) + 6px);
+      overflow:hidden;
+      position:relative;
+    }
+    .hero::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(800px 450px at 15% 10%, rgba(255,183,3,.16), transparent 60%),
+        radial-gradient(900px 520px at 85% 12%, rgba(157,78,221,.18), transparent 60%),
+        radial-gradient(900px 520px at 50% 110%, rgba(33,158,188,.14), transparent 60%);
+      pointer-events:none;
+    }
+    .heroIn{ position:relative; padding:26px; display:grid; gap:18px; grid-template-columns: 110px 1fr; align-items:center; }
+    .avatar{
+      width:110px; height:110px; border-radius:28px;
+      border:1px solid var(--border);
+      background:
+        radial-gradient(120px 120px at 25% 20%, rgba(255,255,255,.50), transparent 55%),
+        linear-gradient(135deg, rgba(75,46,131,.25), rgba(157,78,221,.18));
+      box-shadow: 0 18px 55px rgba(75,46,131,.22);
+      overflow:hidden;
+      position:relative;
+      display:grid; place-items:center;
+      font-weight:900; font-size:34px; color:var(--brand);
+    }
+    .avatar img{ width:100%; height:100%; object-fit:cover; display:none; }
+    .heroTitle{ display:flex; flex-direction:column; gap:8px; min-width:0; }
+    .heroTitle h1{
+      margin:0;
+      font-size: clamp(20px, 2.4vw, 34px);
+      letter-spacing:.2px;
+      line-height:1.25;
+      outline:none;
+    }
+    .heroTitle h1:hover, .heroTitle h1:focus-visible{
+      text-shadow: 0 0 20px rgba(255,183,3,.35);
+      filter: drop-shadow(0 10px 18px rgba(157,78,221,.15));
+    }
+    .sub{ margin:0; color:var(--muted); font-size:14px; }
+
+    .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+    .chip{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: color-mix(in srgb, var(--card), transparent 10%);
+      font-size:12px;
+      display:inline-flex; align-items:center; gap:8px;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      outline:none;
+    }
+    .chip i{
+      width:8px; height:8px; border-radius:50%;
+      background: var(--accent2);
+      box-shadow: 0 0 0 3px rgba(33,158,188,.18);
+    }
+    .chip:hover, .chip:focus-visible{
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent), var(--border) 55%);
+      box-shadow: var(--glow);
+    }
+
+    .quick{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+      gap:10px;
+    }
+    .q{
+      border:1px solid var(--border);
+      background: color-mix(in srgb, var(--card), transparent 8%);
+      border-radius:16px;
+      padding:12px;
+      box-shadow: var(--shadow2);
+      min-height:64px;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      outline:none;
+    }
+    .q:hover, .q:focus-visible{
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent2), var(--border) 55%);
+      box-shadow: 0 20px 60px rgba(33,158,188,.18);
+    }
+    .q b{ display:block; font-size:12px; color:var(--muted); }
+    .q span{ display:block; font-weight:800; margin-top:2px; font-size:13.5px; }
+
+    .tools{ margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+    .search{
+      flex:1; min-width:260px;
+      display:flex; align-items:center; gap:10px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:10px 12px;
+      background: color-mix(in srgb, var(--card), transparent 10%);
+      box-shadow: 0 10px 24px rgba(2,6,23,.06);
+      transition: box-shadow .18s ease, border-color .18s ease;
+    }
+    .search:focus-within{ border-color: color-mix(in srgb, var(--accent), var(--border) 55%); box-shadow: var(--ring); }
+    .search input{
+      width:100%;
+      border:0; outline:0;
+      background:transparent;
+      color:var(--text);
+      font-size:14px;
+    }
+    .hint{ font-size:12px; color:var(--muted); }
+
+    section{
+      margin-top:18px;
+      border:1px solid var(--border);
+      background: color-mix(in srgb, var(--card), transparent 6%);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+    }
+    .secHead{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
+      padding:16px 18px;
+      border-bottom:1px solid var(--border);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--card), transparent 5%), transparent);
+    }
+    .secHead h2{
+      margin:0;
+      font-size:16px;
+      letter-spacing:.2px;
+      outline:none;
+    }
+    .secHead h2:hover, .secHead h2:focus-visible{
+      text-shadow: 0 0 18px rgba(255,183,3,.35);
+      filter: drop-shadow(0 10px 18px rgba(33,158,188,.12));
+    }
+    .secHead p{ margin:6px 0 0; color:var(--muted); font-size:12.5px; }
+    .content{ padding:16px 18px 20px; }
+
+    .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap:12px; }
+    .card{
+      grid-column: span 6;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:14px;
+      background: color-mix(in srgb, var(--card), transparent 4%);
+      box-shadow: 0 10px 28px rgba(2,6,23,.06);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      outline:none;
+    }
+    .card:hover, .card:focus-within{
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent2), var(--border) 60%);
+      box-shadow: 0 24px 70px rgba(33,158,188,.16);
+    }
+    .card h3{
+      margin:0 0 8px;
+      font-size:14px;
+      color: var(--brand);
+      outline:none;
+    }
+    .card h3:hover, .card h3:focus-visible{ text-shadow: 0 0 16px rgba(157,78,221,.32); }
+    .kv{ display:grid; grid-template-columns: 140px 1fr; gap:10px; font-size:13px; }
+    .kv b{ color:var(--muted); font-weight:700; }
+
+    ul.clean{ margin:0; padding:0 18px 0 0; }
+    ul.clean li{
+      margin:6px 0;
+      padding:6px 10px;
+      border-radius:12px;
+      border:1px dashed color-mix(in srgb, var(--border), transparent 35%);
+      background: color-mix(in srgb, var(--card), transparent 10%);
+      transition: box-shadow .18s ease, border-color .18s ease, transform .18s ease;
+      outline:none;
+    }
+    ul.clean li:hover, ul.clean li:focus-visible{
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent), var(--border) 55%);
+      box-shadow: var(--glow);
+    }
+
+    .tableWrap{
+      width:100%;
+      overflow:auto;
+      -webkit-overflow-scrolling:touch;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background: color-mix(in srgb, var(--card), transparent 8%);
+    }
+    table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      min-width:860px;
+      font-size:13px;
+    }
+    th, td{ padding:10px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+    th{
+      position:sticky; top:0;
+      background: color-mix(in srgb, var(--card), var(--bg) 10%);
+      color:var(--brand);
+      z-index:1;
+      font-size:12.5px;
+      letter-spacing:.2px;
+    }
+    tr:hover td{ background: color-mix(in srgb, var(--accent), var(--card) 94%); }
+
+    details{
+      border:1px solid var(--border);
+      border-radius:16px;
+      background: color-mix(in srgb, var(--card), transparent 8%);
+      box-shadow: 0 10px 28px rgba(2,6,23,.05);
+      overflow:hidden;
+      margin:12px 0;
+    }
+    summary{
+      list-style:none;
+      cursor:pointer;
+      padding:12px 14px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      outline:none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    summary b{ color:var(--brand); font-size:14px; outline:none; }
+    summary:hover b, summary:focus-visible b{ text-shadow: 0 0 14px rgba(255,183,3,.35); }
+    summary .meta{
+      color:var(--muted);
+      font-size:12px;
+      white-space:nowrap;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:6px 10px;
+      background: color-mix(in srgb, var(--card), transparent 10%);
+      transition: box-shadow .18s ease, border-color .18s ease;
+    }
+    summary:hover .meta, summary:focus-visible .meta{
+      border-color: color-mix(in srgb, var(--accent2), var(--border) 55%);
+      box-shadow: 0 16px 40px rgba(33,158,188,.20);
+    }
+    details .inside{ padding: 0 14px 14px; }
+
+    footer{ margin-top:18px; padding:16px; text-align:center; color:var(--muted); font-size:12px; }
+
+    @media (max-width: 720px){
+      .heroIn{ grid-template-columns: 88px 1fr; padding:18px; }
+      .avatar{ width:88px; height:88px; border-radius:22px; font-size:28px; }
+      .quick{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .card{ grid-column: span 12; }
+      .kv{ grid-template-columns: 120px 1fr; }
+      .brand{ min-width:auto; }
+    }
+
+    @media print{
+      .topbar, .tools{ display:none !important; }
+      body{ background:#fff; }
+      section, .hero{ box-shadow:none; }
+      a{ text-decoration:none; }
+    }
+  
+    /* Glowing designer credit */
+    footer.credit{
+      margin-top:18px;
+      padding:22px 16px 8px;
+      text-align:center;
+      border-top:1px solid var(--border);
+      background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--card), transparent 12%));
+    }
+    .creditBadge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:10px 16px;
+      border-radius:999px;
+      border:1px solid color-mix(in srgb, var(--accent), var(--border) 55%);
+      background: linear-gradient(135deg,
+        color-mix(in srgb, var(--brand), transparent 75%),
+        color-mix(in srgb, var(--accent2), transparent 78%),
+        color-mix(in srgb, var(--accent), transparent 80%)
+      );
+      color: var(--text);
+      font-weight: 900;
+      letter-spacing:.2px;
+      box-shadow:
+        0 0 0 1px rgba(255,183,3,.30),
+        0 16px 55px rgba(255,183,3,.16),
+        0 10px 35px rgba(157,78,221,.16);
+      text-shadow:
+        0 0 18px rgba(255,183,3,.28),
+        0 0 26px rgba(33,158,188,.20);
+      outline:none;
+      transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+    }
+    .creditBadge:hover,
+    .creditBadge:focus-visible{
+      transform: translateY(-1px);
+      filter: brightness(1.06) saturate(1.08);
+      box-shadow:
+        0 0 0 1px rgba(255,183,3,.55),
+        0 18px 70px rgba(255,183,3,.22),
+        0 12px 40px rgba(33,158,188,.22),
+        0 12px 45px rgba(157,78,221,.18);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="topbar" role="navigation" aria-label="شريط التنقل">
+    <div class="topbarIn">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">هـ</div>
+        <div class="t">
+          <b>د. هدى الشايب</b>
+          <span>موقع أكاديمي — سيرة ذاتية</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="روابط الأقسام">
+        <a href="#about">نبذة</a>
+        <a href="#edu">الدرجات</a>
+        <a href="#career">التدرج الوظيفي</a>
+        <a href="#pubs">الأبحاث</a>
+        <a href="#supervision">الإشراف</a>
+        <a href="#teaching">التدريس</a>
+        <a href="#quality">الجودة</a>
+        <a href="#activities">الأعمال الأكاديمية</a>
+        <a href="#training">الدورات</a>
+        <a href="#confs">المؤتمرات</a>
+        <a href="#community">المجتمع</a>
+        <a href="#contact">التواصل</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn" id="themeBtn" type="button" aria-label="تبديل الوضع">
+          <span class="dot" aria-hidden="true"></span>
+          <span id="themeLabel">الوضع: فاتح</span>
+        </button>
+        <button class="btn" type="button" onclick="window.print()" aria-label="طباعة">🖨️ طباعة</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <div class="hero" id="top">
+      <div class="heroIn">
+        <div class="avatar" id="avatar">
+          <img id="avatarImg" alt="الصورة الشخصية" />
+          هـ
+        </div>
+
+        <div class="heroTitle">
+          <h1 tabindex="0">د. هدى حسنى أحمد إبراهيم الشايب</h1>
+          <p class="sub">أستاذ مساعد بقسم الميكانيكا الحيوية والسلوك الحركي — كلية علوم الرياضة والنشاط البدني — جامعة الملك سعود</p>
+
+          <div class="chips" role="list" aria-label="مجالات الاهتمام">
+            <span class="chip" tabindex="0"><i aria-hidden="true"></i> علم الاجتماع الرياضي</span>
+            <span class="chip" tabindex="0"><i aria-hidden="true"></i> الجودة وتطوير التعليم</span>
+            <span class="chip" tabindex="0"><i aria-hidden="true"></i> التدريب الميداني</span>
+            <span class="chip" tabindex="0"><i aria-hidden="true"></i> قضايا الرياضة والمجتمع</span>
+          </div>
+
+          <div class="tools">
+            <div class="search" role="search" aria-label="بحث داخل السيرة">
+              🔎
+              <input id="q" type="search" placeholder="ابحث داخل الموقع (بحث في الجداول والقوائم)..." />
+              <span class="hint" id="countHint">اكتب للبحث</span>
+            </div>
+            <a class="btn" href="#contact" aria-label="انتقل إلى التواصل">📞 تواصل</a>
+          </div>
+
+          <div class="quick" aria-label="معلومات سريعة">
+            <div class="q" tabindex="0"><b>الجنسية</b><span>مصرية</span></div>
+<div class="q" tabindex="0"><b>الهاتف</b><span dir="ltr">+966 50 031 4452</span></div>
+            <div class="q" tabindex="0"><b>البريد</b><span dir="ltr">Helshayeb.c@ksu.edu.sa</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">نبذة مختصرة</h2>
+          <p>ملخص سريع للهوية المهنية والاهتمامات العلمية.</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="grid">
+          <div class="card" tabindex="0">
+            <h3 tabindex="0">الوظيفة الحالية</h3>
+            <div class="kv">
+              <b>المسمى</b><span>أستاذ مساعد</span>
+              <b>القسم</b><span>الميكانيكا الحيوية والسلوك الحركي</span>
+              <b>الكلية</b><span>كلية علوم الرياضة والنشاط البدني</span>
+              <b>الجامعة</b><span>جامعة الملك سعود</span>
+            </div>
+          </div>
+
+          <div class="card" tabindex="0">
+            <h3 tabindex="0">بيانات شخصية</h3>
+            <div class="kv">
+              <b>الاسم</b><span>هــدى حسنـى أحمـد إبراهيم الشايـب</span>
+              <b>الجنسية</b><span>مصرية</span>
+              <b>البريد</b><span dir="ltr"><a href="mailto:Helshayeb.c@ksu.edu.sa">Helshayeb.c@ksu.edu.sa</a></span>
+              <b>الهاتف</b><span dir="ltr"><a href="tel:+966500314452">+966500314452</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="edu">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">المؤهلات والدرجات العلمية</h2>
+          <p>الدرجات العلمية وعناوين الرسائل.</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="tableWrap" tabindex="0" aria-label="جدول المؤهلات">
+          <table>
+            <thead>
+              <tr>
+                <th>م</th><th>الدرجة</th><th>السنة</th><th>القسم العلمي</th><th>جهة الحصول على الدرجة</th><th>عنوان الرسالة العلمية</th><th>الدولة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>بكالوريوس التربية الرياضية</td><td>2007</td><td>المناهج وطرق التدريس</td><td>كلية التربية الرياضية للبنات – فلمنج – جامعة الإسكندرية</td><td>—</td><td>جمهورية مصر العربية</td></tr>
+              <tr><td>2</td><td>الماجستير في التربية الرياضية</td><td>2011</td><td>العلوم التربوية والنفسية والاجتماعية</td><td>كلية التربية الرياضية للبنات – جامعة الإسكندرية</td><td>المتغيرات المجتمعية وآثرها على السلوك الجماهيرى في التنافس الرياضى</td><td>جمهورية مصر العربية</td></tr>
+              <tr><td>3</td><td>دكتوراه الفلسفة في التربية الرياضية</td><td>2016</td><td>العلوم التربوية والنفسية والاجتماعية</td><td>كلية التربية الرياضية للبنات – جامعة الإسكندرية</td><td>دراسة إيكولوجية للألعاب الشعبية في المجتمع المصرى</td><td>جمهورية مصر العربية</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="career">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">التدرّج الوظيفي</h2>
+          <p>محطات المسار الوظيفي محليًا ودوليًا.</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="tableWrap" tabindex="0" aria-label="جدول التدرج الوظيفي">
+          <table>
+            <thead><tr><th>الفترة</th><th>المنصب</th><th>الجهة</th></tr></thead>
+            <tbody>
+              <tr><td>2007 – 2011</td><td>معيدة بقسم العلوم التربوية والنفسية والاجتماعية</td><td>كلية التربية الرياضية للبنات – جامعة الإسكندرية</td></tr>
+              <tr><td>2012 – 2016</td><td>مدرس مساعد بقسم العلوم التربوية والنفسية والاجتماعية</td><td>كلية التربية الرياضية للبنات – جامعة الإسكندرية</td></tr>
+              <tr><td>2016 – 2023</td><td>مدرس دكتور بقسم العلوم التربوية والنفسية والاجتماعية</td><td>كلية التربية الرياضية للبنات – جامعة الإسكندرية</td></tr>
+              <tr><td>2023 – حتى الآن</td><td>أستاذ علم الاجتماع المساعد بقسم العلوم التربوية والنفسية والاجتماعية</td><td>كلية التربية الرياضية للبنات – جامعة الإسكندرية</td></tr>
+              <tr><td>2019 – حتى الآن</td><td>أستاذ مساعد معار بقسم الميكانيكا الحيوية والسلوك الحركي</td><td>كلية علوم الرياضة والنشاط البدني – جامعة الملك سعود</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="pubs">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">الأبحاث العلمية المنشورة</h2>
+          <p>قائمة مختارة من الأبحاث المنشورة (حسب السيرة).</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="tableWrap" tabindex="0" aria-label="جدول الأبحاث المنشورة">
+          <table>
+            <thead><tr><th>م</th><th>عنوان البحث</th><th>المجلة / المنبر</th><th>الدولة</th><th>السنة</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>المتغيرات المجتمعية وآثرها على السلوك الجماهيرى في التنافس الرياضى</td><td>قسم العلوم التربوية والنفسية والاجتماعية – كلية التربية الرياضية للبنات – جامعة الإسكندرية</td><td>مصر</td><td>2011</td></tr>
+              <tr><td>2</td><td>دراسة إيكولوجية للألعاب الشعبية في المجتمع المصرى</td><td>قسم العلوم التربوية والنفسية والاجتماعية – كلية التربية الرياضية للبنات – جامعة الإسكندرية</td><td>مصر</td><td>2016</td></tr>
+              <tr><td>3</td><td>التكيف الاجتماعى للطالبات المغتربات بكلية التربية الرياضية للبنات جامعة الاسكندرية (دراسة اجتماعية)</td><td>المجلة العلمية للتربية البدنية والرياضة – كلية التربية الرياضية للبنات – جامعة الإسكندرية</td><td>مصر</td><td>2017</td></tr>
+              <tr><td>4</td><td>دور الحركة الكشفية فى تحقيق التنمية البشرية المستدامة فى المجتمع المصرى</td><td>مجلة بحوث التربية الرياضية – كلية التربية الرياضية للبنين – جامعة الزقازيق</td><td>مصر</td><td>2018</td></tr>
+              <tr><td>5</td><td>دراسة تحليلية للقيم الأولمبية ودورها في تحقيق السلْم المجتمعي في ضوء بعض التجارب العالمية المعاصرة</td><td>تطبيقات علوم الرياضة – مجلة كلية التربية الرياضية للبنين – جامعة الإسكندرية</td><td>مصر</td><td>2018</td></tr>
+              <tr><td>6</td><td>دور الرياضة الاولمبية فى فض النزاعات السياسية ونشر ثقافة السلام الدولى (دراسة تحليلية)</td><td>المؤتمر العلمي العملي الدولي الرابع بعنوان الرياضة طريق إلى السلام بين الشعوب — موسكو</td><td>روسيا/مصر</td><td>2018</td></tr>
+              <tr><td>7</td><td>دورالتوافق المهنى فى استدماج بثقافة قبول الآخر للطالبة المعلمة بكلية التربية الرياضية للبنات – جامعة الاسكندرية</td><td>مجلة كلية التربية الرياضية للبنات – الجزيرة – جامعة حلوان</td><td>مصر</td><td>2019</td></tr>
+              <tr><td>8</td><td>دور النشاط الرياضي في تحقيق ثقافة التطوع والانتماء المجتمعي من منظور التنمية المستدامة لطلاب الجامعة</td><td>تطبيقات علوم الرياضة – مجلة كلية التربية الرياضية للبنين – جامعة الاسكندرية</td><td>مصر</td><td>2019</td></tr>
+              <tr><td>9</td><td>أثر العوامل المجتمعية علي اللاميعيارية للاعبى كرة القدم</td><td>مجلة علوم وفنون التربية الرياضية – كلية التربية الرياضية – جامعة أسيوط</td><td>مصر</td><td>2021</td></tr>
+              <tr><td>10</td><td>مدى تقبل أولياء الأمور الاشتراك أبنائهم في الأكاديميات الرياضية</td><td>مجلة الوادي الجديد لعلوم الرياضة – كلية التربية الرياضية – جامعة الوادي الجديد</td><td>مصر</td><td>2021</td></tr>
+              <tr><td>11</td><td>التكامل الإيكولوجى كتوجه قيمى لتطويرالأداء التدريسى للطالبة المعلمة بكلية التربية الرياضية جامعة الإسكندرية</td><td>المجلة العلمية – كلية التربية الرياضية – جامعة اسيوط</td><td>مصر</td><td>2022</td></tr>
+              <tr><td>12</td><td>بناء مقياس المساندة الاجتماعية للرياضيين</td><td>المجلة العلمية للتربية البدنية وعلوم الرياضة – كلية التربية الرياضية – جامعة بنها</td><td>مصر</td><td>2023</td></tr>
+              <tr><td>13</td><td>الإضطرابات النفسية وعلاقتها بجودة الحياة للممارسات و غير الممارسات للنشاط الرياضي في سن اليأس</td><td>مجلة كلية التربية الرياضية للبنات – الجزيرة – جامعة حلوان</td><td>مصر</td><td>2023</td></tr>
+              <tr><td>14</td><td>دور مواقع التواصل الاجتماعي في التثقيف الغذائي والصحي للممارسين وغير الممارسين للنشاط البدني</td><td>المجلة العلمية — كلية علوم الرياضة والنشاط الحركي – جامعة الملك سعود</td><td>السعودية</td><td>2023</td></tr>
+              <tr><td>15</td><td>تصور مقترح للتغلب علي تحديات التدريب الميداني في المجال الرياضي من منظور مفاهيمي معاصر</td><td>المجلة العلمية — كلية علوم الرياضة والنشاط الحركي – جامعة الملك سعود</td><td>السعودية</td><td>2024</td></tr>
+              <tr><td>16</td><td>كتلة الجسم والتثقيف الغذائي وعلاقتهما بجودة الحياة للممارسين وغيرالممارسين للنشاط البدنى</td><td>المؤتمر الدولي الخامس لعلوم الرياضة والنشاط البدني – جامعة الملك سعود</td><td>السعودية</td><td>2024</td></tr>
+              <tr><td>17</td><td>واقع التدريب الميداني لطلبة تخصص التدريب الرياضي بكلية علوم الرياضة والنشاط البدني بجامعة الملك سعود من منظور مزدوجى المهنة</td><td>المجلة العلمية للتربية البدنية وعلوم الرياضة – كلية التربية الرياضية – جامعة بنها</td><td>السعودية</td><td>2024</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="supervision">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">الأبحاث العلمية التي تم الإشراف عليها</h2>
+          <p>نماذج من أعمال الإشراف العلمي (ماجستير).</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="tableWrap" tabindex="0" aria-label="جدول الإشراف العلمي">
+          <table>
+            <thead><tr><th>م</th><th>اسم الطالب</th><th>عنوان البحث</th><th>السنة</th><th>الدرجة</th><th>القسم</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>عزام المنصورى</td><td>بناء مقياس الطلاقة النفسية للاعبى الكرة الطائرة بلبيبا</td><td>2016</td><td>ماجستير</td><td>العلوم التربوية والنفسية والاجتماعية</td></tr>
+              <tr><td>2</td><td>أية سمير عبد الحليم</td><td>بناء مقياس المهارات الاجتماعية لمدربى بعض الأنشطة الرياضية</td><td>2019</td><td>ماجستير</td><td>العلوم التربوية والنفسية والاجتماعية</td></tr>
+              <tr><td>3</td><td>منى الشافعى</td><td>برنامج تدريبى استرخائى نفسى لمواجهة الضغوط النفسية للسيدات بعد سن اليأس</td><td>2019</td><td>ماجستير</td><td>العلوم التربوية والنفسية والاجتماعية</td></tr>
+              <tr><td>4</td><td>شيماء أبو الوفا</td><td>التبادل الاجتماعى والامان الوظيفى للعاملين بالأندية الرياضية بمحافظة الأسكندرية</td><td>2019</td><td>ماجستير</td><td>الإدارة الرياضية</td></tr>
+              <tr><td>5</td><td>هديل حسن فياض</td><td>المعوقات التي تواجه ممارسة المرأة السعودية للرياضة دراسة من منظور اجتماعي</td><td>2022</td><td>ماجستير</td><td>الميكانيكا الحيوية و السلوك الحركي</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">المقررات التدريسية</h2>
+          <p>المقررات التي تم تدريسها بجامعة الإسكندرية وبجامعة الملك سعود.</p>
+        </div>
+      </div>
+      <div class="content">
+        <details open>
+          <summary><b tabindex="0">جامعة الإسكندرية — كلية التربية الرياضية للبنات</b><span class="meta">نظري + تطبيقي</span></summary>
+          <div class="inside">
+            <div class="grid">
+              <div class="card" tabindex="0">
+                <h3 tabindex="0">مقررات نظرية</h3>
+                <ul class="clean">
+                  <li tabindex="0">مدخل علم الاجتماع الرياضى</li>
+                  <li tabindex="0">مدخل علم النفس الرياضى</li>
+                  <li tabindex="0">مدخل أصول التربية البدنية والرياضة</li>
+                  <li tabindex="0">فلسفة وتاريخ التربية البدنية والرياضة</li>
+                  <li tabindex="0">سيكولوجية التدريب الرياضى</li>
+                  <li tabindex="0">سيكولوجية التعلم الحركى</li>
+                  <li tabindex="0">سيكولوجية التدريب والمنافسات</li>
+                  <li tabindex="0">علم الاجتماع الرياضى (دبلوم – تكميلى)</li>
+                </ul>
+              </div>
+              <div class="card" tabindex="0">
+                <h3 tabindex="0">مقررات تطبيقية</h3>
+                <ul class="clean">
+                  <li tabindex="0">تنس أرضى</li>
+                  <li tabindex="0">مسابقات الميدان والمضمار</li>
+                  <li tabindex="0">جمباز فنى</li>
+                  <li tabindex="0">رياضات الدفاع عن النفس (مبارزة – تايكوندو)</li>
+                  <li tabindex="0">الرياضات المائية</li>
+                  <li tabindex="0">الكرة الطائرة</li>
+                  <li tabindex="0">كرة سلة</li>
+                  <li tabindex="0">كرة يد</li>
+                  <li tabindex="0">تنس طاولة</li>
+                  <li tabindex="0">الحاسب الآلى</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><b tabindex="0">جامعة الملك سعود — كلية علوم الرياضة والنشاط البدني</b><span class="meta">نظري + تطبيقي</span></summary>
+          <div class="inside">
+            <div class="tableWrap" tabindex="0" aria-label="جدول مقررات جامعة الملك سعود">
+              <table style="min-width:720px">
+                <thead><tr><th>م</th><th>المقرر</th><th>النوع</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td>الجوانب الاجتماعية للرياضة والنشاط البدني</td><td>نظري</td></tr>
+                  <tr><td>2</td><td>الأسس النفسية للصحة والرياضة</td><td>نظري</td></tr>
+                  <tr><td>3</td><td>مبادئ سلوكيات التدريب</td><td>نظري</td></tr>
+                  <tr><td>4</td><td>قضايا معاصرة في التدريب الرياضي</td><td>نظري</td></tr>
+                  <tr><td>5</td><td>علم نفس التدريب والمنافسات</td><td>نظري</td></tr>
+                  <tr><td>6</td><td>التعلم والتحكم الحركي</td><td>نظري</td></tr>
+                  <tr><td>7</td><td>القياس والتقويم</td><td>نظري</td></tr>
+                  <tr><td>8</td><td>التعلم بالخبرة العملية</td><td>تطبيقي</td></tr>
+                  <tr><td>9</td><td>تطبيقات في الرياضات الجماعية</td><td>تطبيقي</td></tr>
+                  <tr><td>10</td><td>التدريب الميدانى</td><td>تطبيقي</td></tr>
+                  <tr><td>11</td><td>تطبيقات في الرياضات الجماعية والعاب المضرب</td><td>تطبيقي- دبلوم</td></tr>
+                  <tr><td>12</td><td>الخبرة الميدانية</td><td>تطبيقي- دبلوم</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="quality">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">جودة وتطوير العملية التعليمية</h2>
+          <p>أدوار ومساهمات في وحدات الجودة ومشروعات التطوير.</p>
+        </div>
+      </div>
+      <div class="content">
+        <ul class="clean">
+          <li tabindex="0">عضو بوحدة ضمان الجودة بكلية التربية الرياضية للبنات — جامعة الإسكندرية</li>
+          <li tabindex="0">عضو فريق إعداد وتنفيذ مشروع QAAP للجودة فى المؤسسات الأكاديمية</li>
+          <li tabindex="0">عضو فريق إعداد الخطة الاستراتيجية لكلية التربية الرياضية للبنات — جامعة الإسكندرية</li>
+          <li tabindex="0">منسق وحدة ضمان الجودة للدراسات العليا بقسم العلوم التربوية والنفسية والاجتماعية</li>
+          <li tabindex="0">منسق وحدة ضمان الجودة للبكالوريوس بالقسم نفسه</li>
+          <li tabindex="0">عضو مشارك فى إعداد دراسات الجودة ضمن مشروع CIQAP</li>
+          <li tabindex="0">عضو فريق عمل معيار “التخطيط الإستراتيجى” ضمن أعمال CIQAP</li>
+          <li tabindex="0">حضور مؤتمرات وندوات فى مجال الجودة وتطوير العملية التعليمية</li>
+          <li tabindex="0">شارك فى وضع توصيف مقررات العلوم التربوية والنفسية والاجتماعية بنظام الساعات المعتمدة منذ 2008</li>
+          <li tabindex="0">منسق عام الجودة (بكالوريوس – دراسات عليا) بالقسم — جامعة الإسكندرية</li>
+          <li tabindex="0">منسق تواصيف مقررات البكالوريوس لتخصص علم الاجتماع الرياضي بنظام الساعات المعتمدة (2018)</li>
+        </ul>
+
+        <details>
+          <summary><b tabindex="0">مؤلفات علمية (مشاركة)</b><span class="meta">1 عمل</span></summary>
+          <div class="inside">
+            <ul class="clean">
+              <li tabindex="0">موسوعة القياس النفسي في التربية الرياضية — 2018 — الطبعة الأولى — مؤسسة عالم الرياضة للنشر ودار الوفاء</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="activities">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">الأعمال الأكاديمية والإدارية</h2>
+          <p>مهام ولجان على مستوى الأقسام والكليات.</p>
+        </div>
+      </div>
+      <div class="content">
+        <details open>
+          <summary><b tabindex="0">جامعة الإسكندرية — (العلوم التربوية والنفسية والاجتماعية)</b><span class="meta">مهام متعددة</span></summary>
+          <div class="inside">
+            <ul class="clean">
+              <li tabindex="0">المرشد الأكاديمى لطلاب مرحلة الدبلوم – الماجستير – الدكتوراه</li>
+              <li tabindex="0">عضو لجان الامتحانات الشفوية + واضعى الامتحانات + مصحح الامتحانات</li>
+              <li tabindex="0">عضو لجان مراقبة الامتحانات وكنترول الفرقة الثانية وكنترول الدراسات العليا</li>
+              <li tabindex="0">عضو لجان اختبارات القدرات + عضو مجلس القسم + أمين سر المجلس</li>
+              <li tabindex="0">عضو وحدة القياس والتقويم + منسق بنوك الأسئلة</li>
+              <li tabindex="0">عضو مشارك فى تنظيم فعاليات مؤتمرات القسم والكلية + تنظيم الأنشطة الطلابية</li>
+              <li tabindex="0">الإشراف على طالبات التربية العملية فى مدارس متعددة</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary><b tabindex="0">جامعة الملك سعود — (الميكانيكا الحيوية والسلوك الحركي)</b><span class="meta">لجان ووحدات</span></summary>
+          <div class="inside">
+            <ul class="clean">
+              <li tabindex="0">عضو مجلس القسم</li>
+              <li tabindex="0">عضو لجنة الجداول الدراسية والاختبارات</li>
+              <li tabindex="0">عضو لجنة القدرات البدنية والقبول</li>
+              <li tabindex="0">منسق وحدة العلاقات المجتمعية — وكالة التطوير والجودة</li>
+              <li tabindex="0">منسق وحدة المعامل والمختبرات بالقسم</li>
+              <li tabindex="0">عضو لجنة التسويق + لجنة الأكاديميات الرياضية + لجنة الخريجين + مصادر التعلم</li>
+              <li tabindex="0">الإرشاد الأكاديمي + لجنة التدريب الميداني + وحدة المرأة والرياضة</li>
+              <li tabindex="0">مشاركات في تنظيم مؤتمرات دولية (2022–2024) بالجامعة</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="training">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">الدورات التدريبية لتنمية القدرات</h2>
+          <p>قائمة دورات مختارة كما وردت في السيرة (قابلة للبحث).</p>
+        </div>
+      </div>
+      <div class="content">
+        <details>
+          <summary><b tabindex="0">عرض الدورات</b><span class="meta">قائمة طويلة</span></summary>
+          <div class="inside">
+            <div class="tableWrap" tabindex="0">
+              <table>
+                <thead><tr><th>م</th><th>الدورة</th><th>الجهة/المكان</th><th>الدولة</th><th>السنة</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td>أساليب البحث العلمي</td><td>جامعة الإسكندرية</td><td>مصر</td><td>2008</td></tr>
+                  <tr><td>4</td><td>النشر الدولى للبحوث العلمية</td><td>—</td><td>مصر</td><td>2011</td></tr>
+                  <tr><td>9</td><td>معايير الجودة فى العملية التعليمية</td><td>—</td><td>مصر</td><td>2014</td></tr>
+                  <tr><td>17</td><td>التخزين الحسابي</td><td>جامعة الملك سعود</td><td>السعودية</td><td>2022</td></tr>
+                  <tr><td>19</td><td>إدارة ضمان جودة البرنامج</td><td>جامعة الملك سعود</td><td>السعودية</td><td>2022</td></tr>
+                  <tr><td>37</td><td>نظام إدارة الجودة في المؤسسات التعليمية 2015: ISO9001</td><td>عمادة تطوير المهارات — جامعة الملك سعود</td><td>السعودية</td><td>2022</td></tr>
+                  <tr><td>44</td><td>تعزيز التواجد الالكترونى</td><td>عمادة تطوير المهارات — جامعة الملك سعود</td><td>السعودية</td><td>2024</td></tr>
+                  <tr><td>47</td><td>بناء العروض التفاعلية باستخدام Focusky</td><td>عمادة تطوير المهارات — جامعة الملك سعود</td><td>السعودية</td><td>2024</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="confs">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">المؤتمرات العلمية</h2>
+          <p>نماذج من المشاركات في تنظيم/حضور مؤتمرات.</p>
+        </div>
+      </div>
+      <div class="content">
+        <details>
+          <summary><b tabindex="0">عرض قائمة مختارة</b><span class="meta">مختصر</span></summary>
+          <div class="inside">
+            <ul class="clean">
+              <li tabindex="0">ISHPES “الرياضة والتكنولوجيا” — دبي (2013)</li>
+              <li tabindex="0">الرياضة طريق إلى السلام بين الشعوب — موسكو (2018)</li>
+              <li tabindex="0">المؤتمر الدولي الثاني لعلوم الرياضة والنشاط البدني — السعودية (2021) — منظم</li>
+              <li tabindex="0">المؤتمر الدولي الثالث لعلوم الرياضة والنشاط البدني — جامعة الملك سعود (2022) — منظم</li>
+              <li tabindex="0">المؤتمر الدولي الرابع لعلوم الرياضة والنشاط البدني — جامعة الملك سعود (2023) — منظم</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="community">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">الفعاليات والمشاركات المجتمعية</h2>
+          <p>نماذج من الفعاليات (تنظيم/إشراف/مشاركة).</p>
+        </div>
+      </div>
+      <div class="content">
+        <details>
+          <summary><b tabindex="0">عرض قائمة مختارة</b><span class="meta">مختصر</span></summary>
+          <div class="inside">
+            <ul class="clean">
+              <li tabindex="0">فاعلية اليوم العالمي للمرأة — جامعة الملك سعود (2020) — منسق</li>
+              <li tabindex="0">بطولة الاتحاد الرياضي الأول للطالبات بالجامعات السعودية — الطائف (2020) — منسق</li>
+              <li tabindex="0">فاعلية “جامعتي مسؤوليتي” — اليوم العالمي للأشخاص ذوي الإعاقة (2021) — منسق</li>
+              <li tabindex="0">فعاليات تطوعية متعددة عبر المنصة الوطنية للتطوع (2022) — منسق</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="secHead">
+        <div>
+          <h2 tabindex="0">التواصل</h2>
+          <p>طرق تواصل مباشرة.</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="grid">
+          <div class="card" tabindex="0">
+            <h3 tabindex="0">اتصال سريع</h3>
+            <ul class="clean">
+              <li tabindex="0"><b>هاتف:</b> <span dir="ltr"><a href="tel:+966500314452">+966 50 031 4452</a></span></li>
+              <li tabindex="0"><b>بريد:</b> <span dir="ltr"><a href="mailto:Helshayeb.c@ksu.edu.sa">Helshayeb.c@ksu.edu.sa</a></span></li>
+            </ul>
+          </div>
+</div>
+      </div>
+    </section>
+
+    <footer class="credit" aria-label="حقوق التصميم"><span class="creditBadge" tabindex="0">تصميم د. محمد زايد</span></footer>
+  </main>
+
+  <script>
+    const root = document.documentElement;
+    const themeBtn = document.getElementById("themeBtn");
+    const themeLabel = document.getElementById("themeLabel");
+
+    function applyTheme(t){
+      root.setAttribute("data-theme", t);
+      localStorage.setItem("theme", t);
+      themeLabel.textContent = "الوضع: " + (t === "dark" ? "داكن" : "فاتح");
+      document.querySelector('meta[name="theme-color"]').setAttribute("content", t==="dark" ? "#0f1731" : "#4B2E83");
+    }
+    applyTheme(localStorage.getItem("theme") || "light");
+    themeBtn.addEventListener("click", ()=>{
+      const t = root.getAttribute("data-theme")==="dark" ? "light" : "dark";
+      applyTheme(t);
+      loadAvatar(true);
+    });
+async function exists(url){
+      try{ const res = await fetch(url, {method:"HEAD"}); return res.ok; }
+      catch(e){ return false; }
+    }
+    async function loadAvatar(){
+      const img = document.getElementById("avatarImg");
+      const box = document.getElementById("avatar");
+      const t = root.getAttribute("data-theme");
+      const light = "assets/dr1-light.jpg";
+      const dark  = "assets/dr1-dark.jpg";
+      const one   = "assets/dr1.jpg";
+
+      let chosen = null;
+      if(await exists(light) && await exists(dark)){
+        chosen = (t==="dark") ? dark : light;
+      }else if(await exists(one)){
+        chosen = one;
+      }
+      if(chosen){
+        img.src = chosen;
+        img.style.display="block";
+        // keep initials hidden when image exists
+        box.childNodes.forEach(n=>{ if(n.nodeType===3) n.textContent=""; });
+      }else{
+        img.removeAttribute("src");
+        img.style.display="none";
+      }
+    }
+    loadAvatar();
+
+    const q = document.getElementById("q");
+    const hint = document.getElementById("countHint");
+    function setVisible(el, show){ el.style.display = show ? "" : "none"; }
+    function runSearch(){
+      const query = (q.value || "").trim().toLowerCase();
+      const rows = Array.from(document.querySelectorAll("tbody tr"));
+      const items = Array.from(document.querySelectorAll("ul.clean li"));
+      const all = rows.concat(items);
+      if(!query){
+        all.forEach(el=>setVisible(el,true));
+        hint.textContent = "اكتب للبحث";
+        return;
+      }
+      let visible = 0;
+      all.forEach(el=>{
+        const txt = (el.innerText || "").toLowerCase();
+        const ok = txt.includes(query);
+        setVisible(el, ok);
+        if(ok) visible++;
+      });
+      hint.textContent = "نتائج ظاهرة: " + visible;
+    }
+    let tmr=null;
+    q.addEventListener("input", ()=>{ clearTimeout(tmr); tmr=setTimeout(runSearch, 80); });
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener("click", (e)=>{
+        const id = a.getAttribute("href");
+        if(!id || id==="#") return;
+        const target = document.querySelector(id);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:"smooth", block:"start"});
+          history.replaceState(null, "", id);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
